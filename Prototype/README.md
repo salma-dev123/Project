@@ -4,4 +4,3 @@ ce projet est un prototype php qui convertit des données à partir de fichier J
 # installation 
 1. cloner le depot
 2. installer les dépendances avec 'composer install'
-
