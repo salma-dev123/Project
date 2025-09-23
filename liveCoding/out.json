@@ -1,0 +1,27 @@
+[
+    {
+        "Decimal": 42,
+        "Binary": "101010",
+        "HexaDecimal": "2A"
+    },
+    {
+        "Decimal": 7,
+        "Binary": "111",
+        "HexaDecimal": "7"
+    },
+    {
+        "Decimal": 12,
+        "Binary": "1100",
+        "HexaDecimal": "C"
+    },
+    {
+        "Decimal": 0,
+        "Binary": "0",
+        "HexaDecimal": "0"
+    },
+    {
+        "Decimal": 255,
+        "Binary": "11111111",
+        "HexaDecimal": "FF"
+    }
+]

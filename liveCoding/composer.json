@@ -1,0 +1,19 @@
+{
+  "name": "salma/convertisseur",
+  "description": "Convertisseur décimal -> binaire/hex + batch processing CLI",
+  "type": "project",
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "start": "php bin/convert.php",
+    "lint": "php -l src/*.php",
+    "test": "php bin/convert.php --help",
+    "format": "echo \"format placeholder\""
+  }
+}
