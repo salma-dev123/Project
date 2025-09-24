@@ -1,0 +1,5 @@
+/vendor/
+/samples/output.json
+/.idea
+/.vscode
+*.log
