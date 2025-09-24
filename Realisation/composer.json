@@ -1,0 +1,30 @@
+{
+  "name": "salma/mini-calculator",
+  "description": "Mini CLI calculator - decimal<->binary<->hex + bitwise ops + masks",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "start": "php bin/calc.php",
+    "build": [
+      "@lint",
+      "composer dump-autoload -o"
+    ],
+    "validate": [
+      "php -l src/Calculator.php || true",
+      "php -l src/Converter.php || true",
+      "php -l bin/calc.php || true"
+    ],
+    "save": "php bin/calc.php --mode=batch --input=samples/input.txt --output=samples/output.json",
+    "lint": "php -l src/Calculator.php && php -l src/Converter.php && php -l bin/calc.php",
+    "test": "echo \"No tests configured\""
+  },
+  "require-dev": {}
+}
