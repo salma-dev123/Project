@@ -73,13 +73,13 @@ try{
         $out= $batch->toAll();
 
         $outputFile=$options['output'] ?? "out.json";
-        file_put_contents($outputFile, json_encode("out.json", JSON_PRETTY_PRINT));
+        file_put_contents($outputFile, json_encode($out, JSON_PRETTY_PRINT));
         echo "Conversion en mode batch terminée :" . count($out). "elements écrits dans $outputFile\n";
         exit(0);
     }
 
 }
 catch(Throwable $e){
-    fwrite(STDERR, "Erreur" . $e->getMessage() . "\n");
+    fwrite(STDERR, "Erreur"  .   $e->getMessage()  . "\n");
     exit(1);
 }
