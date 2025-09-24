@@ -1,0 +1,43 @@
+classDiagram
+direction TB
+
+class CLI {
+    +run()
+    -parseArguments()
+}
+
+class Calculator {
+    +__construct(int $a, int $b)
+    +and() int
+    +or() int
+    +xor() int
+    +notA() int
+    +notB() int
+}
+
+class Converter {
+    +toBinary(int $number) string
+    +toHex(int $number) string
+}
+
+class InputHandler {
+    +__construct(array $inputs)
+    +validate() array
+}
+
+class OutputHandler {
+    +__construct(array $results)
+    +display() void
+    +save(string $file) void
+}
+
+class OperationInterface
+class LoggerTrait
+
+
+CLI --> "1" Calculator : utilise
+CLI --> "1" Converter : utilise
+CLI --> "1" InputHandler : utilise
+CLI --> "1" OutputHandler : utilise
+Calculator ..|> OperationInterface : implémente
+Calculator ..|> LoggerTrait : utilise
