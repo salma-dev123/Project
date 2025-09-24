@@ -1,0 +1,23 @@
+{
+  "name": "salma/mini-calculator",
+  "description": "Convertisseur et mini-calculatrice CLI (décimal ↔ binaire/hex, opérations logiques, batch)",
+  "type": "project",
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "start": "php bin/convert.php --help",
+    "calc": "php bin/calc.php 5 3",
+    "build": "echo \"Build terminé (placeholder)\"",
+    "validate": "composer validate --strict",
+    "lint": "php -l src/*.php",
+    "test": "php bin/convert.php --help",
+    "format": "echo \"Formatage du code (placeholder)\"",
+    "save": "php bin/convert.php --input=data/sample.json --output=out.json --mode=batch"
+  }
+}
