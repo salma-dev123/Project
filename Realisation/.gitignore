@@ -1,6 +1,0 @@
-/vendor/
-/logs/
-/samples/output.json
-/.env
-/.idea
-*.log
