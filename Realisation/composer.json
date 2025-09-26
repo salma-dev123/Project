@@ -12,7 +12,6 @@
   },
   "scripts": {
   "start": "php bin/calc.php",
-  "calc": "php bin/calc.php 5 3",
   "build": "echo \"Build terminé (placeholder)\"",
   "validate": "composer validate --strict",
   "lint": "php -l src/*.php",
