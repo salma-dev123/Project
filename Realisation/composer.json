@@ -14,7 +14,7 @@
   "start": "php bin/calc.php",
   "build": "composer lint && composer test",
   "validate-project": "composer validate --strict",
-  "lint": "php -l src/*.php",
+  "lint": "php -l src/Converter.php && php -l src/Calculator.php",
   "test": "php bin/convert.php --help",
   "format": "echo \"Formatage du code (placeholder)\"",
   "save": "php bin/calc.php > samples/output.json"
