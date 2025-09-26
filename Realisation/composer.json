@@ -18,7 +18,7 @@
   "lint": "php -l src/Converter.php && php -l src/Calculator.php",
   "test": "php bin/convert.php --help",
   "format": "echo \"Formatage du code (placeholder)\"",
-  "save": "php bin/calc.php > samples/output.json"
+  "save": "php bin/convert.php --input=data/sample.json --output=out.json --mode=batch"
 }
 
 }
