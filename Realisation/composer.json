@@ -2,6 +2,7 @@
   "name": "salma/mini-calculator",
   "description": "Convertisseur et mini-calculatrice CLI (décimal ↔ binaire/hex, opérations logiques, batch)",
   "type": "project",
+  "license": "MIT",
   "require": {
     "php": ">=8.2"
   },
