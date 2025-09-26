@@ -24,10 +24,7 @@ try {
     $calc->display();
 
     @mkdir(__DIR__ . '/../samples', 0777, true);
-    file_put_contents(
-        __DIR__ . '/../samples/output.json',
-        json_encode($calc->calculate(), JSON_PRETTY_PRINT)
-    );
+    file_put_contents(__DIR__ . '/../samples/output.json',json_encode($calc->calculate(), JSON_PRETTY_PRINT));
 
 } catch (Throwable $e) {
     fwrite(STDERR, "Erreur: " . $e->getMessage() . PHP_EOL);
